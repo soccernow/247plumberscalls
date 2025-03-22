@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Plumber - 247 Plumber Calls</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Book a Plumber</h1>
+  <form id="booking-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="location" placeholder="Location" required>
+    <select id="service-type" required>
+      <option value="repair">Repair</option>
+      <option value="replace">Replace</option>
+      <option value="repair-and-replace">Repair & Replace</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="js/form-handlers.js"></script>
+</body>
+</html>
