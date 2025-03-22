@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -20,7 +20,7 @@ header {
   padding: 20px 0;
 }
 
-header h1 {
+header .logo h1 {
   margin: 0;
   font-size: 2rem;
 }
@@ -52,6 +52,11 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
 .cta-button {
   background: #FFC107;
   color: #333;
@@ -59,6 +64,43 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+}
+
+/* Services Section Styles */
+.services {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
 }
 
 /* Footer Styles */
