@@ -7,18 +7,43 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Book a Plumber</h1>
-  <form id="booking-form">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="tel" id="phone" placeholder="Phone Number" required>
-    <input type="text" id="location" placeholder="Location" required>
-    <select id="service-type" required>
-      <option value="repair">Repair</option>
-      <option value="replace">Replace</option>
-      <option value="repair-and-replace">Repair & Replace</option>
-    </select>
-    <button type="submit">Submit</button>
-  </form>
+  <header>
+    <div class="container">
+      <h1>247 Plumber Calls</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="book.html">Book a Plumber</a></li>
+          <li><a href="apply.html">Apply as a Plumber</a></li>
+          <li><a href="admin.html">Admin Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="booking-form">
+    <div class="container">
+      <h2>Book a Plumber</h2>
+      <form id="booking-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="location" placeholder="Location" required>
+        <select id="service-type" required>
+          <option value="repair">Repair</option>
+          <option value="replace">Replace</option>
+          <option value="repair-and-replace">Repair & Replace</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 247 Plumber Calls. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="js/form-handlers.js"></script>
 </body>
