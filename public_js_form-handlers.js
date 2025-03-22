@@ -18,18 +18,6 @@ document.getElementById('booking-form').addEventListener('submit', async (e) => 
   if (error) {
     alert('Error submitting booking. Please try again.');
   } else {
-    // Call Netlify Function to send email
-    const response = await fetch('/.netlify/functions/send-booking-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, phoneNumber, location, serviceType }),
-    });
-
-    const result = await response.json();
-    if (response.ok) {
-      alert('Thank you! Expect a call within 10-30 minutes.');
-    } else {
-      alert('Booking submitted, but email notification failed.');
-    }
+    alert('Thank you! We will call you shortly.');
   }
 });
