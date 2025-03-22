@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - 247 Plumber Calls</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <h2>Bookings</h2>
+  <table id="bookings-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Location</th>
+        <th>Service Type</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Bookings will be populated here -->
+    </tbody>
+  </table>
+
+  <h2>Plumber Applications</h2>
+  <table id="plumbers-table">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Location</th>
+        <th>Experience</th>
+        <th>CV/Resume</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Plumber applications will be populated here -->
+    </tbody>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
