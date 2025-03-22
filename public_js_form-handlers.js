@@ -1,4 +1,3 @@
-// Initialize Supabase using environment variables
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -10,7 +9,6 @@ document.getElementById('booking-form').addEventListener('submit', async (e) => 
   const location = document.getElementById('location').value;
   const serviceType = document.getElementById('service-type').value;
 
-  // Save booking to Supabase
   const { data, error } = await supabase
     .from('bookings')
     .insert([{ name, phone_number: phoneNumber, location, service_type: serviceType }]);
